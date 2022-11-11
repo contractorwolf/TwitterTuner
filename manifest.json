@@ -1,0 +1,19 @@
+{
+    "name": "TwitterTuner",
+    "manifest_version": 3,
+    "version": "0.2",
+    "description": "hides all the promotional articles",
+    "content_scripts": [
+        {
+            "matches": ["https://twitter.com/*"],
+            "run_at": "document_idle",
+            "js": ["content.js"]
+        }
+    ],
+    "icons": {
+        "16": "images/redcheck16.png",
+        "32": "images/redcheck32.png",
+        "48": "images/redcheck48.png",
+        "128": "images/redcheck128.png"
+    }
+}
